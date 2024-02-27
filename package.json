@@ -1,0 +1,29 @@
+{
+  "name": "agenciadeviajes",
+  "version": "1.0.0",
+  "description": "Primer Proyecto con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Joel Palacio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.2.5",
+    "pug": "^3.0.0",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPalacio3/AgenciaDeViajesNode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JPalacio3/AgenciaDeViajesNode/issues"
+  },
+  "homepage": "https://github.com/JPalacio3/AgenciaDeViajesNode#readme"
+}

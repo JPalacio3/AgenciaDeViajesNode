@@ -1,0 +1,10 @@
+# Directorios
+node_modules/
+dist/
+.cache/
+.vscode/
+
+# Archivos
+.env
+.DS_Store
+desktop.ini
