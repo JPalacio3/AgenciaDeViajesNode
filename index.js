@@ -13,6 +13,9 @@ app.set( 'view engine', 'pug' );
 // .use() es un verbo que va a permitir soporte para todos los demás verbos establecidos en el router
 app.use( '/', router );
 
+// Definir la carpeta pública
+app.use( express.static( 'public' ) );
+
 app.listen( port, () => {
     console.log( `El servidor está corriendo en el puerto ${port}` );
 } );
