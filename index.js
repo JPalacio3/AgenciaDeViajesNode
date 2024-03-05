@@ -4,10 +4,18 @@ import router from './routes/index.js';
 const app = express();
 
 // Definir puerto
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5500;
 
 // Habilitar pug
 app.set( 'view engine', 'pug' );
+
+// Obtener el año actual
+app.use( ( req, res, next ) => {
+    const year = new Date();
+    res.locals.actualYear = year.getFullYear();
+    res.locals.nombreSitio = 'Agencia de Viajes';
+    return next();
+} );
 
 // Agregar router
 // .use() es un verbo que va a permitir soporte para todos los demás verbos establecidos en el router

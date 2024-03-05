@@ -8,5 +8,28 @@
 extends ./layout/index
 
 block contenido
-    p Nosotros
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Imagen SobreNosotros", class='img-fluid')
+            .col-md-7
+                h1 #{pagina}
+                blockquote En Agencia de Viajes, nos apasiona brindarte experiencias de viaje inolvidables que te permitan descubrir el mundo de una manera única. Desde exóticos destinos tropicales hasta encantadoras ciudades europeas, nuestro objetivo es ofrecerte una amplia gama de opciones para que puedas explorar y disfrutar de tus vacaciones al máximo.
+                p Nuestra misión es crear momentos inolvidables para cada uno de nuestros clientes. Nos esforzamos por superar tus expectativas en cada aspecto de tu viaje, desde la planificación hasta la ejecución. Con un equipo de expertos en destinos turísticos y una atención al detalle excepcional, estamos comprometidos a hacer de tus sueños de viaje una realidad.
+                p Años de experiencia en la industria del turismo, en Agencia de Viajes nos enorgullece ofrecer un servicio personalizado y de alta calidad. Nuestro compromiso con la excelencia se refleja en cada aspecto de lo que hacemos, desde la selección de los mejores destinos hasta la atención individualizada que recibes de nuestro equipo. Confía en nosotros para hacer de tu próximo viaje una experiencia inolvidable.
 
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad" class='img-fluid mb-4')
+                    h2.mb4 Seguridad
+                    p Nos comprometemos a garantizar que cada aspecto de tu viaje esté cuidadosamente planificado y supervisado para brindarte tranquilidad y confianza en cada paso del camino. Desde la selección de proveedores confiables hasta la implementación de estrictos estándares de seguridad, puedes estar seguro de que estás en buenas manos cuando viajas con nosotros.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono Destinos" class='img-fluid mb-4')
+                    h2.mb4 Mejores Destinos
+                    p Explora destinos cautivadores y emocionantes con nuestra amplia selección de viajes turísticos. Desde las exuberantes selvas tropicales hasta las majestuosas montañas nevadas, nuestros destinos te transportarán a lugares de ensueño donde podrás sumergirte en nuevas culturas, descubrir paisajes impresionantes y crear recuerdos inolvidables.
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono Precios" class='img-fluid mb-4')
+                    h2.mb4 Los Mejores Precios
+                    p Nuestro compromiso es brindarte las mejores ofertas para que puedas disfrutar de experiencias increíbles sin romper tu presupuesto. Con tarifas accesibles y paquetes personalizados, estamos aquí para hacer que tus sueños de viaje se hagan realidad.
