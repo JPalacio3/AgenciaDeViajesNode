@@ -9,7 +9,6 @@ db.authenticate()
     .then( () => console.log( 'Base de datos conectada' ) )
     .catch( error => console.log( error ) );
 
-
 // Definir puerto
 const port = process.env.PORT || 5500;
 
@@ -34,4 +33,3 @@ app.use( express.static( 'public' ) );
 app.listen( port, () => {
     console.log( `El servidor está corriendo en el puerto ${port}` );
 } );
-
