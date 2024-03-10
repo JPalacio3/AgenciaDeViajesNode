@@ -4,7 +4,6 @@ propio archivo.
 1. Importamos express para tener acceso a la funcionalidad de express.
 2. Creamos una variable para definir el uso de express.
 3. Exportamos la configuración del router para añadirlo a pagina de acceso a la aplicación.
-
 */
 
 import express from 'express';
@@ -38,6 +37,5 @@ router.get( '/testimoniales', ( req, res ) => {
         pagina: 'Testimoniales'
     } );
 } );
-
 
 export default router;
