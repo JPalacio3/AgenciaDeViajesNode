@@ -1,4 +1,5 @@
 // Importa el modelo
+import { Testimonial } from "../models/Testimoniales.js";
 import { Viaje } from "../models/Viaje.js";
 
 // Controlador para la página de incio
@@ -44,10 +45,21 @@ const paginaDetalleViaje = async ( req, res ) => {
 }
 
 // Controlador para la página Testimoniales
-const paginaTestimoniales = ( req, res ) => {
-    res.render( 'testimoniales', {
-        pagina: 'Testimoniales'
-    } );
+const paginaTestimoniales = async ( req, res ) => {
+
+    try {
+        // Consultar el módelo de testimoniales
+        const testimoniales = await Testimonial.findAll();
+
+        res.render( 'testimoniales', {
+            pagina: 'Testimoniales',
+            testimoniales
+        } );
+    } catch ( error ) {
+        console.log( error );
+    }
+
+
 }
 
 export {
