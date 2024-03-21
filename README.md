@@ -56,4 +56,4 @@ Si encuentras algún error o tienes alguna sugerencia de mejora, no dudes en cre
 
 Este proyecto está bajo la Licencia [ISC](https://opensource.org/licenses/ISC).
 
-Este archivo `readme.md` proporciona una descripción general del proyecto, instrucciones para la instalación y el uso, así como detalles sobre las dependencias utilizadas. También incluye secciones para contribuciones y la licencia del proyecto. Asegúrate de personalizar los enlaces y la información según sea necesario antes de publicar en GitHub.
+Este archivo `readme.md` proporciona una descripción general del proyecto, instrucciones para la instalación y el uso, así como detalles sobre las dependencias utilizadas.
