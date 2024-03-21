@@ -35,7 +35,7 @@ npm run dev
 Este comando iniciará el servidor local y podrás acceder a la aplicación en tu navegador web ingresando la siguiente URL:
 
 ```
-http://localhost:3000
+http://localhost:5500
 ```
 
 ## Dependencias
