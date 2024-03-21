@@ -3,10 +3,25 @@ import { Testimonial } from "../models/Testimoniales.js";
 import { Viaje } from "../models/Viaje.js";
 
 // Controlador para la página de incio
-const paginaInicio = ( req, res ) => {
-    res.render( 'inicio', {
-        pagina: 'Inicio'
-    } );
+const paginaInicio = async ( req, res ) => {
+    // Consultar 3 viajes del modelo Viaje
+    //Crear una promesa para realizar varias consultas al modelo de Viaje al mismo tiempo
+    const promiseDB = [];
+    promiseDB.push( Viaje.findAll( { limit: 3 } ) );
+    promiseDB.push( Testimonial.findAll( { limit: 3 } ) );
+
+    try {
+        const resultado = await Promise.all( promiseDB );
+
+        res.render( 'inicio', {
+            pagina: 'Inicio',
+            clase: 'home',
+            viajes: resultado[ 0 ],
+            testimoniales: resultado[ 1 ]
+        } );
+    } catch ( error ) {
+        console.log( error );
+    }
 }
 
 // Controlador para la página Nosotros
@@ -58,8 +73,6 @@ const paginaTestimoniales = async ( req, res ) => {
     } catch ( error ) {
         console.log( error );
     }
-
-
 }
 
 export {

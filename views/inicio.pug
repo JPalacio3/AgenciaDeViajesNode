@@ -5,12 +5,35 @@
 //- p #{viajes}
 
 extends ./layout/index
+block slider
+    .slider
+        em aventura
+        h1 Río de Janeiro
 
 block contenido
     main.container.mt-5
-        .row
-            h1 #{pagina}
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Vivamus interdum dignissim risus ac suscipit. Nunc quis mi eu ligula dignissim tempus ut sed sem. Aliquam erat volutpat. Pellentesque malesuada gravida leo, rutrum maximus metus iaculis quis. Duis vulputate non ex quis fermentum.
 
+                p Aenean pulvinar odio sed sapien condimentum blandit. Morbi ut nibh lobortis, cursus ex efficitur, pulvinar arcu. Ut id nisl sit amet nisi vulputate interdum. Vivamus lacus odio, bibendum sed feugiat nec, rutrum sed lorem. Nulla facilisi.
 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imágen Nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes.pug
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo de 2024 - 28 de Marzo de 2024
+                        p.precio $ 2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales.pug
 
 
