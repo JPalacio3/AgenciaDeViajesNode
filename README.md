@@ -1,6 +1,3 @@
-Aquí tienes el contenido para tu archivo `readme.md`:
-
-```markdown
 # Agencia de Viajes
 
 Este proyecto es una aplicación web para una agencia de viajes, donde los usuarios pueden explorar diferentes destinos turísticos y reservar sus viajes. Fue creado con Node.js, Express y Pug, y se desarrolló con fines educativos como parte de los estudios en JavaScript.
@@ -11,19 +8,19 @@ Para ejecutar este proyecto localmente en tu máquina, sigue estos pasos:
 
 1. Clona este repositorio en tu máquina local:
 
-   ```bash
+   ```
    git clone https://github.com/JPalacio3/AgenciaDeViajesNode.git
    ```
 
 2. Ve al directorio del proyecto:
 
-   ```bash
+   ```
    cd AgenciaDeViajesNode
    ```
 
 3. Instala las dependencias del proyecto utilizando npm:
 
-   ```bash
+   ```
    npm install
    ```
 
@@ -31,7 +28,7 @@ Para ejecutar este proyecto localmente en tu máquina, sigue estos pasos:
 
 Una vez que hayas clonado el repositorio y hayas instalado las dependencias, puedes ejecutar la aplicación localmente. Utiliza el siguiente comando:
 
-```bash
+```
 npm run dev
 ```
 
