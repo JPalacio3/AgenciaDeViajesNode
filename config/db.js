@@ -16,7 +16,6 @@ const db = new Sequelize(process.env.DB_URL, {
     idle: 10000,
   },
   dialect: "mysql", // Aseguramos que el dialecto sea MySQL
-  operatorsAliases: false,
 });
 
 export default db;
