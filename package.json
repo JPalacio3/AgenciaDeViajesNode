@@ -1,7 +1,7 @@
 {
   "name": "agenciadeviajes",
   "version": "1.0.0",
-  "description": "Primer Proyecto con Node.js",
+  "description": "AgenciaDeViajesNode",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
